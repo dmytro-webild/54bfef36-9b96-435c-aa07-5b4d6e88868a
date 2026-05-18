@@ -99,6 +99,7 @@ export default function LandingPage() {
 
   <div id="metrics" data-section="metrics">
       <MetricCardFourteen
+      tag="Our Impact"
       useInvertedBackground={false}
       title="Growth"
       metrics={[
