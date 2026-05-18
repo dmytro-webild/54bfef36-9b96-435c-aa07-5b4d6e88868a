@@ -51,7 +51,7 @@ export default function LandingPage() {
         { value: "10k+", label: "Happy Clients" },
       ]}
       enableKpiAnimation={true}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=1"
       imageAlt="La Vie en Rose signature collection"
       mediaAnimation="slide-up"
     />
@@ -89,8 +89,8 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={true}
       products={[
-        { id: "p1", name: "Signature Vase", price: "$85", variant: "Decor", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" },
-        { id: "p2", name: "Artisan Throw", price: "$180", variant: "Home", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" },
+        { id: "p1", name: "Signature Vase", price: "$85", variant: "Decor", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=2" },
+        { id: "p2", name: "Artisan Throw", price: "$180", variant: "Home", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=3" },
       ]}
       title="Curated Collections"
       description="Exclusive selections."
@@ -113,7 +113,7 @@ export default function LandingPage() {
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwelve
       useInvertedBackground={true}
-      testimonials={[{ id: "t1", name: "Isabelle Laurent", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" }]}
+      testimonials={[{ id: "t1", name: "Isabelle Laurent", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=4" }]}
       cardTitle="Connoisseur Feedback"
       cardTag="Loved by many"
       cardAnimation="slide-up"
