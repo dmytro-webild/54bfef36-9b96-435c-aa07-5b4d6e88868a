@@ -11,7 +11,7 @@ import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
-import { Award, Shield, Sparkles } from "lucide-react";
+import { Award, Shield, Sparkles, MapPin, Clock, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -44,15 +44,15 @@ export default function LandingPage() {
       <HeroSplitKpi
       background={{ variant: "gradient-bars" }}
       title="La Vie en Rose"
-      description="Elegant lifestyle essentials curated for your unique moments. Discover our collection of hand-picked artisan pieces designed for refined living."
+      description="Greek natural, organic cosmetics brand founded by Dimitra Katsafadou in 2016. Harnessing the power of nature to bring radiance and health to your skin through ethical, high-quality botanical formulations."
       kpis={[
-        { value: "12+", label: "Years Curating" },
-        { value: "500+", label: "Unique Pieces" },
-        { value: "10k+", label: "Happy Clients" },
+        { value: "2016", label: "Founded" },
+        { value: "100%", label: "Organic" },
+        { value: "Greek", label: "Artisan Craft" },
       ]}
       enableKpiAnimation={true}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=1"
-      imageAlt="La Vie en Rose signature collection"
+      imageAlt="La Vie en Rose natural cosmetics"
       mediaAnimation="slide-up"
     />
   </div>
@@ -61,8 +61,8 @@ export default function LandingPage() {
       <InlineImageSplitTextAbout
       useInvertedBackground={true}
       heading={[
-        { type: "text", content: "Life in " },
-        { type: "text", content: "Bloom" },
+        { type: "text", content: "Pure Nature, " },
+        { type: "text", content: "Pure Radiance" },
       ]}
     />
   </div>
@@ -73,12 +73,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        { icon: Sparkles, title: "Artisan Quality", description: "Handcrafted excellence in every detail." },
-        { icon: Award, title: "Timeless Design", description: "Pieces built to last through trends." },
-        { icon: Shield, title: "Ethical Living", description: "Sourced with care for our planet." },
+        { icon: Sparkles, title: "Organic Certified", description: "Pure, natural ingredients sourced from Greek lands." },
+        { icon: Award, title: "Artisan Formula", description: "Expertly blended by Dimitra Katsafadou since 2016." },
+        { icon: Shield, title: "Cruelty-Free", description: "Ethically produced with respect for nature and skin." },
       ]}
-      title="Core Values"
-      description="Our commitment to beauty and ethics."
+      title="Our Philosophy"
+      description="Beauty that honors the earth and empowers your spirit."
     />
   </div>
 
@@ -89,22 +89,22 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={true}
       products={[
-        { id: "p1", name: "Signature Vase", price: "$85", variant: "Decor", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=2" },
-        { id: "p2", name: "Artisan Throw", price: "$180", variant: "Home", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=3" },
+        { id: "p1", name: "Botanical Serum", price: "€42", variant: "Skincare", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=2" },
+        { id: "p2", name: "Essential Glow Oil", price: "€38", variant: "Face", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=3" },
       ]}
-      title="Curated Collections"
-      description="Exclusive selections."
+      title="Signature Collection"
+      description="Discover our best-selling organic treasures."
     />
   </div>
 
   <div id="metrics" data-section="metrics">
       <MetricCardFourteen
-      tag="Our Impact"
+      tag="Sparta Store"
       useInvertedBackground={false}
-      title="Growth"
+      title="Visit Us"
       metrics={[
-        { id: "m1", value: "15+", description: "Cities Serviced" },
-        { id: "m2", value: "98%", description: "Satisfaction" },
+        { id: "m1", value: "Sparta", description: "Kon/nou Palaiologou 62" },
+        { id: "m2", value: "Daily", description: "Operating Hours available on-site" },
       ]}
       metricsAnimation="slide-up"
     />
@@ -113,9 +113,9 @@ export default function LandingPage() {
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwelve
       useInvertedBackground={true}
-      testimonials={[{ id: "t1", name: "Isabelle Laurent", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=4" }]}
-      cardTitle="Connoisseur Feedback"
-      cardTag="Loved by many"
+      testimonials={[{ id: "t1", name: "Maria G.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg?_wi=4" }]}
+      cardTitle="Natural Beauty"
+      cardTag="Customer Favorites"
       cardAnimation="slide-up"
     />
   </div>
@@ -124,15 +124,15 @@ export default function LandingPage() {
       <ContactText
       useInvertedBackground={false}
       background={{ variant: "plain" }}
-      text="Stay connected with our latest artisan releases."
-      buttons={[{ text: "Join Circle", href: "#contact" }]}
+      text="Visit our Sparta location at Kon/nou Palaiologou 62 to experience our organic cosmetics firsthand."
+      buttons={[{ text: "Call Us: +30 2731 0XXXXX", href: "tel:+302731000000" }]}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBaseReveal
       logoText="La Vie en Rose"
-      columns={[{ title: "Links", items: [{ label: "Home", href: "#hero" }] }]}
+      columns={[{ title: "Store", items: [{ label: "Sparta: Kon/nou Palaiologou 62", href: "#" }] }]}
       copyrightText="© 2024 La Vie en Rose"
     />
   </div>
