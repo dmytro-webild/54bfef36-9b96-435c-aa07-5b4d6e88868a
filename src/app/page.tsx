@@ -31,22 +31,10 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleCentered
       navItems={[
-        {
-          name: "Home",
-          id: "hero",
-        },
-        {
-          name: "About",
-          id: "about",
-        },
-        {
-          name: "Collection",
-          id: "products",
-        },
-        {
-          name: "Contact",
-          id: "contact",
-        },
+        { name: "Home", id: "hero" },
+        { name: "About", id: "about" },
+        { name: "Collection", id: "products" },
+        { name: "Contact", id: "contact" },
       ]}
       brandName="La Vie en Rose"
     />
@@ -54,74 +42,18 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitKpi
-      background={{
-        variant: "gradient-bars",
-      }}
-      title="Experience Life in Bloom"
-      description="Discover curated lifestyle essentials designed to elevate your everyday moments with elegance and grace."
+      background={{ variant: "gradient-bars" }}
+      title="La Vie en Rose"
+      description="Elegant lifestyle essentials curated for your unique moments. Discover our collection of hand-picked artisan pieces designed for refined living."
       kpis={[
-        {
-          value: "12+",
-          label: "Years Curating",
-        },
-        {
-          value: "500+",
-          label: "Unique Pieces",
-        },
-        {
-          value: "10k+",
-          label: "Happy Clients",
-        },
+        { value: "12+", label: "Years Curating" },
+        { value: "500+", label: "Unique Pieces" },
+        { value: "10k+", label: "Happy Clients" },
       ]}
       enableKpiAnimation={true}
-      imageSrc="http://img.b2bpic.net/free-photo/beautiful-still-life-arrangement-with-water_23-2149176105.jpg"
-      imageAlt="La Vie en Rose lifestyle collection"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg"
+      imageAlt="La Vie en Rose signature collection"
       mediaAnimation="slide-up"
-      avatars={[
-        {
-          src: "http://img.b2bpic.net/free-photo/person-drinking-healthy-matcha-tea_52683-109318.jpg",
-          alt: "Person drinking healthy matcha tea",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/beautiful-still-life-arrangement-with-water_23-2149176106.jpg",
-          alt: "Beautiful still life arrangement with water",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/beatuful-wedding-rings_1328-2232.jpg",
-          alt: "beatuful wedding rings ",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/young-woman-knitted-stockings-uses-phone-cozy-bed-autumn-leaves_169016-14028.jpg",
-          alt: "A young woman in knitted stockings uses the phone in a cozy bed",
-        },
-        {
-          src: "http://img.b2bpic.net/free-photo/still-life-with-spring-flowers-home_169016-3770.jpg",
-          alt: "Still life with spring flowers at home",
-        },
-      ]}
-      avatarText="Join 10k+ happy clients"
-      marqueeItems={[
-        {
-          type: "text",
-          text: "Timeless Aesthetic",
-        },
-        {
-          type: "text",
-          text: "Handcrafted Excellence",
-        },
-        {
-          type: "text",
-          text: "Ethical Sourcing",
-        },
-        {
-          type: "text",
-          text: "Refined Living",
-        },
-        {
-          type: "text",
-          text: "Elegant Boutique",
-        },
-      ]}
     />
   </div>
 
@@ -129,19 +61,8 @@ export default function LandingPage() {
       <InlineImageSplitTextAbout
       useInvertedBackground={true}
       heading={[
-        {
-          type: "text",
-          content: "Our Philosophy of ",
-        },
-        {
-          type: "image",
-          src: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=o47cwr",
-          alt: "flower",
-        },
-        {
-          type: "text",
-          content: " Beauty",
-        },
+        { type: "text", content: "Life in " },
+        { type: "text", content: "Bloom" },
       ]}
     />
   </div>
@@ -152,24 +73,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        {
-          icon: Sparkles,
-          title: "Handcrafted Excellence",
-          description: "Each item is meticulously selected for its quality and artistry.",
-        },
-        {
-          icon: Award,
-          title: "Timeless Aesthetic",
-          description: "Designs that transcend trends for lasting beauty in your home.",
-        },
-        {
-          icon: Shield,
-          title: "Ethical Sourcing",
-          description: "Committed to sustainable and ethical practices in all our collections.",
-        },
+        { icon: Sparkles, title: "Artisan Quality", description: "Handcrafted excellence in every detail." },
+        { icon: Award, title: "Timeless Design", description: "Pieces built to last through trends." },
+        { icon: Shield, title: "Ethical Living", description: "Sourced with care for our planet." },
       ]}
-      title="The Art of Living"
-      description="Exquisitely selected items for a refined life."
+      title="Core Values"
+      description="Our commitment to beauty and ethics."
     />
   </div>
 
@@ -180,75 +89,21 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={true}
       products={[
-        {
-          id: "p1",
-          name: "Floral Vase",
-          price: "$85",
-          variant: "Decor",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-white-rose-vase_52683-121581.jpg",
-        },
-        {
-          id: "p2",
-          name: "Silk Scarf",
-          price: "$120",
-          variant: "Accessories",
-          imageSrc: "http://img.b2bpic.net/free-photo/accessories-skincare-products_23-2147710691.jpg",
-        },
-        {
-          id: "p3",
-          name: "Ceramic Tea Set",
-          price: "$240",
-          variant: "Kitchen",
-          imageSrc: "http://img.b2bpic.net/free-photo/preparing-sake-japanese-beverage_23-2150158614.jpg",
-        },
-        {
-          id: "p4",
-          name: "Velvet Throw",
-          price: "$180",
-          variant: "Home",
-          imageSrc: "http://img.b2bpic.net/free-photo/bed-arrangement-with-fresh-sheets_23-2150551110.jpg",
-        },
-        {
-          id: "p5",
-          name: "Gold Scented Candle",
-          price: "$65",
-          variant: "Fragrance",
-          imageSrc: "http://img.b2bpic.net/free-photo/still-life-flowers-with-decorative-objects-living-room_169016-5968.jpg",
-        },
-        {
-          id: "p6",
-          name: "Crystal Decanter",
-          price: "$320",
-          variant: "Barware",
-          imageSrc: "http://img.b2bpic.net/free-photo/still-life-with-vases-with-spring-flowers-living-room_169016-6356.jpg",
-        },
+        { id: "p1", name: "Signature Vase", price: "$85", variant: "Decor", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" },
+        { id: "p2", name: "Artisan Throw", price: "$180", variant: "Home", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" },
       ]}
       title="Curated Collections"
-      description="Exclusive pieces available only through La Vie en Rose."
+      description="Exclusive selections."
     />
   </div>
 
   <div id="metrics" data-section="metrics">
       <MetricCardFourteen
       useInvertedBackground={false}
-      title="A Legacy of Elegance"
-      tag="Our Growth"
+      title="Growth"
       metrics={[
-        {
-          id: "m1",
-          value: "15+",
-          description: "Cities Serviced",
-        },
-        {
-          id: "m2",
-          value: "98%",
-          description: "Customer Satisfaction",
-        },
-        {
-          id: "m3",
-          value: "100%",
-          description: "Artisan Crafted",
-        },
+        { id: "m1", value: "15+", description: "Cities Serviced" },
+        { id: "m2", value: "98%", description: "Satisfaction" },
       ]}
       metricsAnimation="slide-up"
     />
@@ -257,35 +112,9 @@ export default function LandingPage() {
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwelve
       useInvertedBackground={true}
-      testimonials={[
-        {
-          id: "t1",
-          name: "Isabelle Laurent",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-interested-girl-with-wavy-hair-smiling-excited-caucasian-female-model-with-tanned-skin_197531-9029.jpg",
-        },
-        {
-          id: "t2",
-          name: "Marcus Thorne",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-priest-confession_23-2149284637.jpg",
-        },
-        {
-          id: "t3",
-          name: "Chloe Dupont",
-          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-serious-blond-girl-trench-coat-confidently-looking-camera-city-street_574295-3880.jpg",
-        },
-        {
-          id: "t4",
-          name: "Elena Rossi",
-          imageSrc: "http://img.b2bpic.net/free-photo/elegant-looking-woman-looking-camera_23-2148286468.jpg",
-        },
-        {
-          id: "t5",
-          name: "Julian Vane",
-          imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-redhead-model-man-sits-swing-room-with-loft-interior_613910-20177.jpg",
-        },
-      ]}
-      cardTitle="Loved by Connoisseurs"
-      cardTag="Testimonials"
+      testimonials={[{ id: "t1", name: "Isabelle Laurent", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DssUMJKVcmwVqfaFmYK7mykjub/uploaded-1779082306907-44xp7acu.jpg" }]}
+      cardTitle="Connoisseur Feedback"
+      cardTag="Loved by many"
       cardAnimation="slide-up"
     />
   </div>
@@ -293,50 +122,16 @@ export default function LandingPage() {
   <div id="contact" data-section="contact">
       <ContactText
       useInvertedBackground={false}
-      background={{
-        variant: "plain",
-      }}
-      text="Join our inner circle for exclusive invitations, artisan updates, and first access to new collections."
-      buttons={[
-        {
-          text: "Get In Touch",
-          href: "#contact",
-        },
-      ]}
+      background={{ variant: "plain" }}
+      text="Stay connected with our latest artisan releases."
+      buttons={[{ text: "Join Circle", href: "#contact" }]}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterBaseReveal
       logoText="La Vie en Rose"
-      columns={[
-        {
-          title: "Company",
-          items: [
-            {
-              label: "About Us",
-              href: "#about",
-            },
-            {
-              label: "Press",
-              href: "#",
-            },
-          ],
-        },
-        {
-          title: "Support",
-          items: [
-            {
-              label: "Contact",
-              href: "#contact",
-            },
-            {
-              label: "Shipping",
-              href: "#",
-            },
-          ],
-        },
-      ]}
+      columns={[{ title: "Links", items: [{ label: "Home", href: "#hero" }] }]}
       copyrightText="© 2024 La Vie en Rose"
     />
   </div>
